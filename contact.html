@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Samuel DEMON</title>
+    <link rel="stylesheet" href="./styles/contact_style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Samuel's Portfolio</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="portfolio_moderne.html#projets">Projets</a></li>
+                <li><a href="portfolio_moderne.html#academic_experience">Expérience Académique</a></li>
+                <li><a href="portfolio_moderne.html#professional_experience">Expérience Professionelle</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="./others/CV.pdf">CV</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="section-title">Me contacter</h2>
+
+            <div class="contact-container">
+                <div class="contact-info">
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <a href="mailto:demonsamuel19@gmail.com">demonsamuel19@gmail.com</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <a href="https://www.linkedin.com/in/samuel-demon-b226b1360/" target="_blank">LinkedIn</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <div href="https://github.com/samdmn" class="contact-icon">🐙</div>
+                        <a href="https://github.com/samdmn" target="_blank">GitHub</a>
+                    </div>
+
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <a href="tel:0637410969">+33 (0)6.37.41.09.69</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const menuToggle = document.getElementById("menuToggle")
+        const navLinks = document.getElementById("navLinks")
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active")
+        })
+    </script>
+</body>
+</html>
