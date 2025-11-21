@@ -237,6 +237,12 @@ section {
     background-position: center;
 }
 
+.recursives-img {
+    background-image: url('../images/calbuth.png');
+    background-size: 85%;
+    background-position: center;
+}
+
 .project-content {
     padding: 1.5rem;
 }
