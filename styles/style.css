@@ -249,6 +249,12 @@ section {
     background-position: center;
 }
 
+.drawingapp-img {
+    background-image: url('../images/drawingapp.png');
+    background-size: 100%;
+    background-position: center;
+}
+
 .project-content {
     padding: 1.5rem;
 }
