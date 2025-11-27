@@ -239,7 +239,13 @@ section {
 
 .recursives-img {
     background-image: url('../images/calbuth.png');
-    background-size: 85%;
+    background-size: 100%;
+    background-position: center;
+}
+
+.texteditor-img {
+    background-image: url('../images/texteditor.png');
+    background-size: 100%;
     background-position: center;
 }
 
