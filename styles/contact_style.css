@@ -129,6 +129,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .contact-item {
@@ -156,7 +157,7 @@ section {
 }
 
 .contact-item:nth-child(2) .contact-icon {
-    background-color: var(--primary); /* La couleur que vous voulez */
+    background-color: var(--primary);
     mask-image: url('../images/linkedin.svg');
     mask-size: contain;
     mask-repeat: no-repeat;
@@ -165,7 +166,7 @@ section {
 }
 
 .contact-item:nth-child(3) .contact-icon {
-    background-color: var(--primary); /* La couleur que vous voulez */
+    background-color: var(--primary);
     mask-image: url('../images/github.svg');
     mask-size: contain;
     mask-repeat: no-repeat;
@@ -182,6 +183,112 @@ section {
 
 .contact-item a:hover {
     color: white;
+}
+
+/* Styles du formulaire */
+.form-divider {
+    text-align: center;
+    margin: 2rem 0;
+    position: relative;
+    color: #999;
+}
+
+.form-divider::before,
+.form-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #ddd;
+}
+
+.form-divider::before {
+    left: 0;
+}
+
+.form-divider::after {
+    right: 0;
+}
+
+.form-divider span {
+    background: white;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #7d4a9a;
+}
+
+.submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.form-status {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.form-status.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-status.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
 }
 
 @media (max-width: 768px) {
@@ -202,5 +309,14 @@ section {
 
     .nav-links.active {
         right: 0;
+    }
+
+    .contact-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .form-divider::before,
+    .form-divider::after {
+        width: 35%;
     }
 }
