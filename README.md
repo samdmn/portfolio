@@ -1,4 +1,6 @@
-# Mon Portfolio
+# Mon Portfolio 
+
+[![CodeFactor](https://www.codefactor.io/repository/github/samdmn/portfolio/badge)](https://www.codefactor.io/repository/github/samdmn/portfolio)
 
 J'ai developpé ce portfolio lors de ma recherche de stage de fin de Licence Informatique. Je le vois comme une suite améliorée de CV, pour pouvoir fournir plus de détails à quiconque souhaite se renseigner sur moi.
 
