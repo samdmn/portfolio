@@ -280,7 +280,7 @@ section {
 }
 
 .project-meta strong {
-    color: var(--primary);
+    color: var(--secondary);
     display: block;
     margin-bottom: 0.3rem;
 }
